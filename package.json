@@ -1,0 +1,17 @@
+{
+  "name": "touch-pen",
+  "version": "0.1.0",
+  "description": "Write with your mouse or touch screen.",
+  "repository": "https://github.com/bruce965/touch-pen",
+  "author": "Fabio Iotti",
+  "license": "GPL-3.0-or-later",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build --public-url ."
+  },
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
+}
