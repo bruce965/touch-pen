@@ -1,6 +1,5 @@
-// SPDX-FileCopyrightText: 2023 Fabio Iotti <info@fabioiotti.com>
-//
-// SPDX-License-Identifier: GPL-3.0-or-later
+// SPDX-FileCopyrightText: 2023-2025 Fabio Iotti <info@fabioiotti.com>
+// SPDX-License-Identifier: AGPL-3.0-only
 
 import { computeControlPoints } from './smoothCurve';
 

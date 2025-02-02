@@ -1,6 +1,5 @@
 // SPDX-FileCopyrightText: 2015 Ramsundar Shandilya <ramshandilya@gmail.com>
 // SPDX-FileCopyrightText: 2023 Fabio Iotti <info@fabioiotti.com>
-//
 // SPDX-License-Identifier: MIT
 
 // https://www.ramshandilya.com/blog/draw-smooth-curves/
