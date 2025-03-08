@@ -1,17 +1,19 @@
 {
   "name": "touch-pen",
+  "private": true,
   "version": "0.1.0",
+  "type": "module",
   "description": "Write with your mouse or touch screen.",
   "repository": "https://github.com/bruce965/touch-pen",
   "author": "Fabio Iotti",
-  "license": "GPL-3.0-or-later",
-  "source": "src/index.html",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "license": "AGPL-3.0-only",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build --public-url ."
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "parcel": "^2.13.3"
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
   }
 }

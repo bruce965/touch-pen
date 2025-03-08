@@ -16,6 +16,7 @@ const registerTouchPen = (canvas: HTMLCanvasElement) => {
 
 	const length = (vec: Point) => Math.sqrt(vec[0] * vec[0] + vec[1] * vec[1]);
 
+	// @ts-ignore
 	const add = (a: Point, b: Point): Point => [a[0] + b[0], a[1] + b[1]];
 	const sub = (a: Point, b: Point): Point => [a[0] - b[0], a[1] - b[1]];
 
@@ -113,13 +114,16 @@ const registerTouchPen = (canvas: HTMLCanvasElement) => {
 		window.addEventListener('touchcancel', listenUp, { capture: true, passive: true });
 	};
 
+	// @ts-ignore
 	const drawPoints1 = (points: PointWithSize[], debug = false) => {
 		let controlPoint: Point = points[0];
 
 		for (let i = 1; i < points.length; i++) {
 			const point = points[i];
 			const prev = points[i - 1];
+			// @ts-ignore
 			const prev2 = points[i - 2] ?? prev;
+			// @ts-ignore
 			const next = points[i + 1] ?? point;
 
 			const len = length(sub(point, prev));
